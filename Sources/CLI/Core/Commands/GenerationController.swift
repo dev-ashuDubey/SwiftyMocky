@@ -407,10 +407,7 @@ final class GenerationController: GenerationCommand {
 
     func resolveSourceryBinPath() -> String? {
         let swiftPM: Path = root + ".build/checkouts/Sourcery/bin/sourcery"
-        let cocoapods: Path = root + "Pods/Sourcery/bin/sourcery"
-        if cocoapods.exists {
-            return cocoapods.string
-        } else if swiftPM.exists {
+        if swiftPM.exists {
             return swiftPM.string
         } else {
             return nil
