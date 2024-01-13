@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/JohnSundell/ShellOut", .upToNextMajor(from: "2.3.0")),
-        .package(url: "https://github.com/tuist/xcodeproj", .upToNextMajor(from: "8.3.1")),
+        .package(url: "https://github.com/tuist/xcodeproj", .upToNextMajor(from: "8.16.0")),
         .package(url: "https://github.com/luoxiu/Chalk", .exact("0.2.1")),
         .package(url: "https://github.com/kylef/Commander", .upToNextMajor(from: "0.9.1")),
         .package(url: "https://github.com/kylef/PathKit", .upToNextMajor(from: "1.0.1")),
